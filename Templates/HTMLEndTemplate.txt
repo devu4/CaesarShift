@@ -1,0 +1,27 @@
+</ul>
+</div>
+<script type='text/javascript'>
+
+function saveTextAsFile()
+{
+	var hash = window.location.hash.substring(1);
+	if(hash=='')
+		window.alert("You haven't selected a shift!");
+	var textToWrite = document.getElementById(hash).textContent.trim();
+	var fileNameToSaveAs = 'caesarShiftPlainText ' + hash;
+	
+  	var element = document.createElement('a');
+  	element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(textToWrite));
+  	element.setAttribute('download', fileNameToSaveAs + '.txt');
+
+  	element.style.display = 'none';
+  	document.body.appendChild(element);
+
+  	element.click();
+
+  	document.body.removeChild(element);
+}
+
+</script>
+</body>
+</html>

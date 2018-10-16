@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+<head>
+<meta charset='utf-8'>
+<title>Caesar Cipher Output</title>
+<style>
+@import url(https://fonts.googleapis.com/css?family=Lato);
+body{
+    background-size: cover;
+    background-attachment: fixed;
+    background-image: url('http://www.justcapelle.com/tabbed-css3-html5-tabs/css/img/bg.jpg');
+    background-position: center center;
+	font-family: Lato;
+}
+h2 {
+    display: block;
+    font-size: 0.9em;
+    font-weight: bold;
+	margin-bottom: 10px;
+    margin-left: 3px;
+    margin-top: 0px;
+    color: #2300A9;
+}
+
+#accordion{margin:50px auto;max-width:700px;min-width:400px;}
+#accordion ul{list-style:none;margin:0;padding:0;}
+.accordion{display:none;}
+.accordion:target{display:block;}
+#accordion ul li a{text-decoration:none;display:block;padding:10px;}
+.accordion{padding:14px;}
+
+#accordion ul{
+/*box-shadow*/
+-webkit-box-shadow:0 4px 10px #000;
+   -moz-box-shadow:0 4px 10px #000;
+        box-shadow:0 4px 10px #000;
+/*border-radius*/
+-webkit-border-radius:5px;
+   -moz-border-radius:5px;
+        border-radius:5px;
+}
+h1 {
+    display: block;
+    font-size: 2em;
+    font-weight: bold;
+	margin:0;
+}
+#accordion ul li a{
+background: #243B5F;
+color: #FFF;
+border-bottom: 1px solid #7098D8;
+}
+#accordion ul li a:hover{
+background: #475F84;
+}
+.accordion{
+background:#fdfdfd;
+color:#999;
+word-wrap: break-word;
+}
+.accordion:target{
+border-top:3px solid #5698FF;
+}
+button{
+	float:right;
+
+}
+</style>
+</head>
+
+<body>
+<div id='accordion'>
+<h1>Caesar Shift Output</h1>
+<h2>Click the shift you would like to view!<button onclick='saveTextAsFile()'>Save selected shift!</button></h2><ul>
